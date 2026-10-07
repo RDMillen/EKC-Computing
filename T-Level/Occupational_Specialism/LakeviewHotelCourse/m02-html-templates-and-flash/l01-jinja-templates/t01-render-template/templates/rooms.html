@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>{{ hotel_name }}: rooms</title></head>
+<body>
+<h1>{{ hotel_name }}</h1>
+<ul>
+{% for room in rooms %}
+  <li>Room {{ room.number }}: {{ room.type }} (£{{ "%.2f"|format(room.price) }} per night)</li>
+{% endfor %}
+</ul>
+</body>
+</html>

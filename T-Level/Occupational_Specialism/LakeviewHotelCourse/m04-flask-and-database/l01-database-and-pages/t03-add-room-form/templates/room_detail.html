@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Room {{ room["number"] }}{% endblock %}
+{% block content %}
+<h1>Room {{ room["number"] }}</h1>
+<p>{{ room["room_type"] }}, sleeps {{ room["capacity"] }}. £{{ "%.2f"|format(room["price_per_night"]) }} per night.</p>
+{% if room["available"] %}
+  <p><a href="/book/{{ room['id'] }}">Book this room</a></p>
+{% else %}
+  <p>This room is not available.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,21 @@
+type: edu
+custom_name: "3.2.3 SELECT, WHERE and ORDER BY"
+files:
+  - name: queries.py
+    visible: true
+    placeholders:
+      - offset: 839
+        length: 101
+        placeholder_text: "-- TODO: number, room_type, price_per_night of available rooms,\
+      \ cheapest first"
+      - offset: 968
+        length: 117
+        placeholder_text: "-- TODO: available rooms with capacity >= ? and price_per_night\
+      \ <= ?, most expensive first"
+  - name: tests/test.py
+    visible: false
+  - name: tests/helpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

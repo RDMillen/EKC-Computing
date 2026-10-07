@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Lakeview Hotel{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    {# These links use plain paths so this layout works in every task, even before a route exists.
+       In your own project, build them with url_for, as you did in task 2.1.3. #}
+    <a href="/">Home</a>
+    <a href="/rooms">Rooms</a>
+    {% if g.user %}
+      <a href="/my-bookings">My bookings</a>
+      <a href="/profile">{{ g.user["name"] }}</a>
+      <a href="/logout">Log out</a>
+    {% else %}
+      <a href="/register">Register</a>
+      <a href="/login">Log in</a>
+    {% endif %}
+  </nav>
+  <main>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}
+        <p class="alert alert-{{ category }}" role="alert">{{ message }}</p>
+      {% endfor %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+type: edu
+custom_name: 3.3.3 Parameterised queries
+files:
+  - name: database.py
+    visible: true
+    placeholders:
+      - offset: 217
+        length: 81
+        placeholder_text: "pass  # TODO: SELECT the room with this number (use a ? parameter)"
+      - offset: 353
+        length: 187
+        placeholder_text: "pass  # TODO: INSERT the user with ? parameters, commit, return\
+      \ the new id"
+      - offset: 584
+        length: 79
+        placeholder_text: "pass  # TODO: SELECT the user with this email (use a ? parameter)"
+  - name: tests/test.py
+    visible: false
+  - name: tests/helpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

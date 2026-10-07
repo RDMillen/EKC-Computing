@@ -1,0 +1,5 @@
+type: theory
+custom_name: "10.1.4 Challenge: the same app with Flask-SQLAlchemy"
+files:
+  - name: notes.md
+    visible: true

@@ -1,0 +1,6 @@
+custom_name: 2.2 Flash messages and the secret key
+content:
+  - t01-how-flash-works
+  - t02-secret-key
+  - t03-flash-and-redirect
+  - t04-show-flashed-messages

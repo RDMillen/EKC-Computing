@@ -1,0 +1,17 @@
+type: edu
+custom_name: 10.1.1 Search for available rooms
+files:
+  - name: search.py
+    visible: true
+    placeholders:
+      - offset: 170
+        length: 342
+        placeholder_text: "pass  # TODO: SELECT rooms with enough capacity, available\
+      \ = 1 and NOT EXISTS an overlapping booking. ORDER BY price_per_night"
+  - name: tests/test.py
+    visible: false
+  - name: tests/dbhelpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

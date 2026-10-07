@@ -1,0 +1,69 @@
+type: edu
+custom_name: 5.1.4 Edit your own profile
+files:
+  - name: views.py
+    visible: true
+    placeholders:
+      - offset: 5326
+        length: 663
+        placeholder_text: |-
+          pass  # TODO: on POST read name and email, validate, UPDATE the logged-in user's row (? parameters),
+              #       handle a duplicate email, then flash "Profile updated" and redirect to the profile page.
+  - name: app.py
+    visible: true
+    editable: false
+  - name: db.py
+    visible: true
+    editable: false
+  - name: schema.sql
+    visible: true
+    editable: false
+  - name: templates/base.html
+    visible: true
+    editable: false
+  - name: templates/home.html
+    visible: true
+    editable: false
+  - name: templates/rooms.html
+    visible: true
+    editable: false
+  - name: templates/room_form.html
+    visible: true
+    editable: false
+  - name: templates/room_detail.html
+    visible: true
+    editable: false
+  - name: templates/register.html
+    visible: true
+    editable: false
+  - name: templates/login.html
+    visible: true
+    editable: false
+  - name: templates/account.html
+    visible: true
+    editable: false
+  - name: templates/profile.html
+    visible: true
+    editable: false
+  - name: templates/book.html
+    visible: true
+    editable: false
+  - name: templates/booking_confirmation.html
+    visible: true
+    editable: false
+  - name: templates/my_bookings.html
+    visible: true
+    editable: false
+  - name: templates/edit_booking.html
+    visible: true
+    editable: false
+  - name: static/style.css
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/helpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

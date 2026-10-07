@@ -1,0 +1,4 @@
+custom_name: "Module 1: Getting Started with Flask"
+content:
+  - l01-setup-and-first-routes
+  - l02-project-structure-and-git

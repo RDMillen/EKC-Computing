@@ -1,0 +1,5 @@
+custom_name: 7.1 Changing and cancelling bookings
+content:
+  - t01-update-booking
+  - t02-edit-route
+  - t03-cancel-route

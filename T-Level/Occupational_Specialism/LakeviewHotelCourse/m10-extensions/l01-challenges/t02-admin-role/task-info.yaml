@@ -1,0 +1,5 @@
+type: theory
+custom_name: "10.1.2 Challenge: an admin role"
+files:
+  - name: notes.md
+    visible: true

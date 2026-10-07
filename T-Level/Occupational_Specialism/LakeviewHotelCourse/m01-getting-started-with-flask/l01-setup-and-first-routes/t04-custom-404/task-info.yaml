@@ -1,0 +1,17 @@
+type: edu
+custom_name: 1.1.4 A friendly 404 page
+files:
+  - name: app.py
+    visible: true
+    placeholders:
+      - offset: 158
+        length: 46
+        placeholder_text: "pass  # TODO: return the message and the 404 status code"
+  - name: views.py
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

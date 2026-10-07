@@ -1,0 +1,73 @@
+type: edu
+custom_name: 5.1.2 Log in and log out with sessions
+files:
+  - name: views.py
+    visible: true
+    placeholders:
+      - offset: 3986
+        length: 575
+        placeholder_text: |-
+          pass  # TODO: on POST look the user up by email and check the password hash.
+              #       Bad details: flash "Invalid email or password". Good details: session.clear(), store user_id, redirect to the rooms page.
+      - offset: 4666
+        length: 108
+        placeholder_text: "pass  # TODO: clear the session, flash \"You have been logged\
+      \ out\" and redirect to the login page"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: db.py
+    visible: true
+    editable: false
+  - name: schema.sql
+    visible: true
+    editable: false
+  - name: templates/base.html
+    visible: true
+    editable: false
+  - name: templates/home.html
+    visible: true
+    editable: false
+  - name: templates/rooms.html
+    visible: true
+    editable: false
+  - name: templates/room_form.html
+    visible: true
+    editable: false
+  - name: templates/room_detail.html
+    visible: true
+    editable: false
+  - name: templates/register.html
+    visible: true
+    editable: false
+  - name: templates/login.html
+    visible: true
+    editable: false
+  - name: templates/account.html
+    visible: true
+    editable: false
+  - name: templates/profile.html
+    visible: true
+    editable: false
+  - name: templates/book.html
+    visible: true
+    editable: false
+  - name: templates/booking_confirmation.html
+    visible: true
+    editable: false
+  - name: templates/my_bookings.html
+    visible: true
+    editable: false
+  - name: templates/edit_booking.html
+    visible: true
+    editable: false
+  - name: static/style.css
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/helpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

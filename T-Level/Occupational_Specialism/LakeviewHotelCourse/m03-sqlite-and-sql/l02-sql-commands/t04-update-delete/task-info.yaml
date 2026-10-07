@@ -1,0 +1,23 @@
+type: edu
+custom_name: 3.2.4 UPDATE and DELETE
+files:
+  - name: queries.py
+    visible: true
+    placeholders:
+      - offset: 838
+        length: 53
+        placeholder_text: "-- TODO: set price_per_night (first ?) for the room number\
+      \ (second ?)"
+      - offset: 919
+        length: 47
+        placeholder_text: "-- TODO: set available = 0 for one room number"
+      - offset: 987
+        length: 33
+        placeholder_text: "-- TODO: delete one booking by id"
+  - name: tests/test.py
+    visible: false
+  - name: tests/helpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

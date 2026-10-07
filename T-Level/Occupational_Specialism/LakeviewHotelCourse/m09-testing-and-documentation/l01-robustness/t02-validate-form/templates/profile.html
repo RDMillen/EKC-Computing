@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Your profile{% endblock %}
+{% block content %}
+<h1>Your profile</h1>
+<form method="post">
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" value="{{ current['name'] }}" required>
+  <label for="email">Email address</label>
+  <input id="email" name="email" type="email" value="{{ current['email'] }}" required>
+  <button type="submit">Save changes</button>
+</form>
+{% endblock %}

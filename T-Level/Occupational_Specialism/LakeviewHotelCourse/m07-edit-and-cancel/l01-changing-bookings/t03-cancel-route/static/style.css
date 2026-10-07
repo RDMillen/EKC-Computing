@@ -1,0 +1,16 @@
+body { font-family: system-ui, sans-serif; margin: 0; color: #1d2733; }
+nav { background: #0b3c5d; padding: 0.75rem 1rem; }
+nav a { color: #fff; margin-right: 1rem; text-decoration: none; }
+main { max-width: 52rem; margin: 1.5rem auto; padding: 0 1rem; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border-bottom: 1px solid #d5dde5; padding: 0.5rem; text-align: left; }
+label { display: block; margin-top: 0.75rem; font-weight: 600; }
+input { padding: 0.4rem; min-width: 14rem; }
+button { margin-top: 1rem; padding: 0.5rem 1rem; }
+.alert { padding: 0.6rem 0.8rem; border-radius: 4px; }
+.alert-success { background: #e1f5e5; color: #14532d; }
+.alert-error { background: #fde8e8; color: #7f1d1d; }
+.alert-info { background: #e0f0fb; color: #0c4a6e; }
+.badge { padding: 0.1rem 0.5rem; border-radius: 1rem; font-size: 0.85rem; }
+.available { background: #e1f5e5; color: #14532d; }
+.unavailable { background: #fde8e8; color: #7f1d1d; }

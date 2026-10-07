@@ -1,0 +1,4 @@
+custom_name: 6.2 Booking pages
+content:
+  - t01-book-route
+  - t02-my-bookings

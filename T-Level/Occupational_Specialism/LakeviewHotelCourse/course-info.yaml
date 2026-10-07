@@ -1,0 +1,26 @@
+title: "Lakeview Hotel: Flask, Jinja and SQLite booking system"
+language: English
+summary: "Build a hotel booking website from the ground up with Python 3.10+, Flask,\
+  \ Jinja templates, flash messages, SQLite and raw SQL: routes, templates, SQL, database-driven\
+  \ pages, user accounts, bookings with price calculation, editing and cancelling,\
+  \ collision detection, validation, testing and documentation. Module 10 contains\
+  \ optional extensions. Practice material for T Level Digital Software Development."
+vendor:
+  name: Ross Millen
+programming_language: Python
+environment: unittest
+content:
+  - m01-getting-started-with-flask
+  - m02-html-templates-and-flash
+  - m03-sqlite-and-sql
+  - m04-flask-and-database
+  - m05-user-accounts
+  - m06-booking-a-room
+  - m07-edit-and-cancel
+  - m08-collision-detection
+  - m09-testing-and-documentation
+  - m10-extensions
+additional_files:
+  - name: requirements.txt
+  - name: README.md
+yaml_version: 6

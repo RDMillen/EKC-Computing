@@ -1,0 +1,5 @@
+type: theory
+custom_name: 1.1.1 Welcome and set-up
+files:
+  - name: notes.md
+    visible: true

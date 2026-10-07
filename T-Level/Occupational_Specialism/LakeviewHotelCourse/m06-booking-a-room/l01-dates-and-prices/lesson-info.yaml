@@ -1,0 +1,5 @@
+custom_name: "6.1 Dates, prices and saving a booking"
+content:
+  - t01-dates
+  - t02-price-calculation
+  - t03-create-booking

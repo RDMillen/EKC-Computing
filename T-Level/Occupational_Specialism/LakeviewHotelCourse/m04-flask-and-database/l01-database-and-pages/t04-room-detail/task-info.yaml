@@ -1,0 +1,44 @@
+type: edu
+custom_name: 4.1.4 A page for one room
+files:
+  - name: views.py
+    visible: true
+    placeholders:
+      - offset: 2236
+        length: 192
+        placeholder_text: "pass  # TODO: fetch the room, abort(404) if it does not exist,\
+      \ otherwise render room_detail.html"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: db.py
+    visible: true
+    editable: false
+  - name: schema.sql
+    visible: true
+    editable: false
+  - name: templates/base.html
+    visible: true
+    editable: false
+  - name: templates/home.html
+    visible: true
+    editable: false
+  - name: templates/rooms.html
+    visible: true
+    editable: false
+  - name: templates/room_form.html
+    visible: true
+    editable: false
+  - name: templates/room_detail.html
+    visible: true
+    editable: false
+  - name: static/style.css
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/helpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

@@ -1,0 +1,6 @@
+custom_name: "5.1 Registration, login and profiles"
+content:
+  - t01-register
+  - t02-login-logout
+  - t03-login-required
+  - t04-edit-profile

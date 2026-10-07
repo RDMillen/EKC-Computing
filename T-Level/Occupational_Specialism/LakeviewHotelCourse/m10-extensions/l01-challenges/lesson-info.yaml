@@ -1,0 +1,7 @@
+custom_name: 10.1 Extension challenges
+content:
+  - t01-search-available
+  - t02-admin-role
+  - t03-seasonal-pricing
+  - t04-orm-comparison
+  - t05-refactor

@@ -1,0 +1,7 @@
+custom_name: 3.2 SQL commands
+content:
+  - t01-create-tables
+  - t02-insert
+  - t03-select
+  - t04-update-delete
+  - t05-join-group

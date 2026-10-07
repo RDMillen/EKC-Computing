@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Book room {{ room["number"] }}{% endblock %}
+{% block content %}
+<h1>Book room {{ room["number"] }}</h1>
+<p>{{ room["room_type"] }}, sleeps {{ room["capacity"] }}. £{{ "%.2f"|format(room["price_per_night"]) }} per night
+   for up to 2 guests, plus £10 per extra guest per night.</p>
+<form method="post">
+  <label for="check_in">Check-in date</label>
+  <input id="check_in" name="check_in" type="date" value="{{ form.get('check_in', '') }}" required>
+  <label for="nights">Number of nights</label>
+  <input id="nights" name="nights" type="number" min="1" value="{{ form.get('nights', '1') }}" required>
+  <label for="occupants">Number of guests</label>
+  <input id="occupants" name="occupants" type="number" min="1" value="{{ form.get('occupants', '1') }}" required>
+  <button type="submit">Book now</button>
+</form>
+{% endblock %}

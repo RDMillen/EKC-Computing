@@ -1,0 +1,22 @@
+type: edu
+custom_name: 4.1.1 One database connection per request
+files:
+  - name: db.py
+    visible: true
+    placeholders:
+      - offset: 226
+        length: 184
+        placeholder_text: |-
+          pass  # TODO: open ONE connection per request and keep it on g
+              #       (row_factory = sqlite3.Row, and turn foreign keys on)
+      - offset: 501
+        length: 64
+        placeholder_text: "pass  # TODO: pop \"db\" from g and close it if it exists"
+  - name: schema.sql
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

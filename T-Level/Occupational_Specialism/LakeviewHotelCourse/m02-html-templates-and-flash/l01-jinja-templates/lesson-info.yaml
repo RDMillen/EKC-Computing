@@ -1,0 +1,5 @@
+custom_name: 2.1 Jinja templates
+content:
+  - t01-render-template
+  - t02-loops-and-conditions
+  - t03-template-inheritance

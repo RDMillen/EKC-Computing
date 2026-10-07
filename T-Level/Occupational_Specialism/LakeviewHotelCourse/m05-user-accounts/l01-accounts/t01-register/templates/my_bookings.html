@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}My bookings{% endblock %}
+{% block content %}
+<h1>My bookings</h1>
+{% if bookings %}
+<table>
+  <thead><tr><th>Room</th><th>Check-in</th><th>Check-out</th><th>Guests</th><th>Total</th><th></th></tr></thead>
+  <tbody>
+  {% for b in bookings %}
+    <tr>
+      <td>{{ b["room_number"] }} ({{ b["room_type"] }})</td>
+      <td>{{ b["check_in"] }}</td>
+      <td>{{ b["check_out"] }}</td>
+      <td>{{ b["occupants"] }}</td>
+      <td>£{{ "%.2f"|format(b["total_price"]) }}</td>
+      <td>
+        <a href="/bookings/{{ b['id'] }}/edit">Edit</a>
+        <form method="post" action="/bookings/{{ b['id'] }}/cancel" style="display:inline">
+          <button type="submit">Cancel</button>
+        </form>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>You have no bookings yet. <a href="/rooms">Browse rooms</a>.</p>
+{% endif %}
+{% endblock %}

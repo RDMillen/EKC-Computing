@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Rooms{% endblock %}
+{% block content %}
+<h1>Rooms</h1>
+<table>
+  <thead>
+    <tr><th>Room</th><th>Type</th><th>Sleeps</th><th>Price per night</th><th>Status</th></tr>
+  </thead>
+  <tbody>
+  {% for room in rooms %}
+    <tr>
+      <td><a href="/rooms/{{ room['id'] }}">{{ room["number"] }}</a></td>
+      <td>{{ room["room_type"] }}</td>
+      <td>{{ room["capacity"] }}</td>
+      <td>£{{ "%.2f"|format(room["price_per_night"]) }}</td>
+      <td>{% if room["available"] %}Available{% else %}Unavailable{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

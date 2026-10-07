@@ -1,0 +1,17 @@
+type: edu
+custom_name: 3.2.2 INSERT
+files:
+  - name: queries.py
+    visible: true
+    placeholders:
+      - offset: 832
+        length: 84
+        placeholder_text: "-- TODO: INSERT a room using four ? parameters"
+      - offset: 934
+        length: 63
+        placeholder_text: "-- TODO: INSERT a user using three ? parameters"
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

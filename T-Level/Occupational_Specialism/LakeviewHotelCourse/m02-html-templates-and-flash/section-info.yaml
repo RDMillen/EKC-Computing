@@ -1,0 +1,5 @@
+custom_name: "Module 2: HTML Templates and Flash Messages"
+content:
+  - l01-jinja-templates
+  - l02-flash-messages
+  - l03-accessibility

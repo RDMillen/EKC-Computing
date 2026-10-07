@@ -1,0 +1,18 @@
+type: edu
+custom_name: 2.2.2 Configure a secret key
+files:
+  - name: app.py
+    visible: true
+    placeholders:
+      - offset: 83
+        length: 77
+        placeholder_text: "# TODO: set SECRET_KEY from the environment, with a development\
+      \ fallback"
+  - name: views.py
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

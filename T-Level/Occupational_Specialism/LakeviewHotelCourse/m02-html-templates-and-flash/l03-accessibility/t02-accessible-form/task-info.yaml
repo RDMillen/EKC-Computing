@@ -1,0 +1,24 @@
+type: edu
+custom_name: 2.3.2 Make a form accessible
+files:
+  - name: templates/enquiry.html
+    visible: true
+    placeholders:
+      - offset: 22
+        length: 9
+        placeholder_text: lang="TODO"
+      - offset: 184
+        length: 241
+        placeholder_text: "<!-- TODO: add a labelled name input, a labelled email input\
+      \ and a submit button -->"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: views.py
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

@@ -1,0 +1,21 @@
+type: edu
+custom_name: 3.2.5 JOINs and counting
+files:
+  - name: queries.py
+    visible: true
+    placeholders:
+      - offset: 839
+        length: 171
+        placeholder_text: "-- TODO: join bookings, users and rooms. Columns: b.id, u.name,\
+      \ r.number, b.check_in, b.check_out, b.total_price"
+      - offset: 1042
+        length: 114
+        placeholder_text: "-- TODO: each room number with its number of bookings, including\
+      \ rooms with none"
+  - name: tests/test.py
+    visible: false
+  - name: tests/helpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

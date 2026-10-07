@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Edit booking {{ booking["id"] }}{% endblock %}
+{% block content %}
+<h1>Edit booking #{{ booking["id"] }}</h1>
+<p>Room {{ booking["room_number"] }} ({{ booking["room_type"] }}).</p>
+<form method="post">
+  <label for="check_in">Check-in date</label>
+  <input id="check_in" name="check_in" type="date" value="{{ booking['check_in'] }}" required>
+  <label for="nights">Number of nights</label>
+  <input id="nights" name="nights" type="number" min="1" value="{{ nights }}" required>
+  <label for="occupants">Number of guests</label>
+  <input id="occupants" name="occupants" type="number" min="1" value="{{ booking['occupants'] }}" required>
+  <button type="submit">Save changes</button>
+</form>
+{% endblock %}

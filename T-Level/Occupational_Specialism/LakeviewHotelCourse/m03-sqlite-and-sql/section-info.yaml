@@ -1,0 +1,5 @@
+custom_name: "Module 3: Databases and SQL"
+content:
+  - l01-relational-basics
+  - l02-sql-commands
+  - l03-sqlite3-in-python

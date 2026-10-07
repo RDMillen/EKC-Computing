@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: '`N_in < E_out AND N_out > E_in`'
+    is_correct: true
+  - text: '`N_in <= E_out AND N_out >= E_in`'
+    is_correct: false
+  - text: '`N_in > E_in AND N_out < E_out`'
+    is_correct: false
+  - text: '`N_in = E_in OR N_out = E_out`'
+    is_correct: false
+message_correct: Correct!
+message_incorrect: Test your answer with the 'back-to-back' timeline and the 'surrounds'
+  timeline from the theory task.
+files:
+  - name: notes.md
+    visible: true
+custom_name: 8.1.2 Which condition detects an overlap?
+local_check: true

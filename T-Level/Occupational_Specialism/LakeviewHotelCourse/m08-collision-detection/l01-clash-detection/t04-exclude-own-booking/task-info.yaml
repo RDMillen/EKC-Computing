@@ -1,0 +1,22 @@
+type: edu
+custom_name: 8.1.4 Ignore the booking being edited
+files:
+  - name: bookings.py
+    visible: true
+    placeholders:
+      - offset: 1816
+        length: 298
+        placeholder_text: |-
+          row = db.execute(
+                  "SELECT COUNT(*) AS clashes FROM bookings "
+                  "WHERE room_id = ? AND check_in < ? AND check_out > ?",
+                  (room_id, check_out, check_in),
+              ).fetchone()
+              return row["clashes"] > 0
+  - name: tests/test.py
+    visible: false
+  - name: tests/dbhelpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

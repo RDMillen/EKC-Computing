@@ -1,0 +1,5 @@
+type: theory
+custom_name: "8.1.6 AI-assisted coding: review and log"
+files:
+  - name: AI_LOG.md
+    visible: true

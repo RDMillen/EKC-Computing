@@ -1,0 +1,21 @@
+type: edu
+custom_name: 2.1.2 Loops and conditions in Jinja
+files:
+  - name: templates/rooms.html
+    visible: true
+    placeholders:
+      - offset: 225
+        length: 140
+        placeholder_text: "<!-- TODO: show a badge saying Available or Unavailable (use\
+      \ an if/else in Jinja) -->"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: views.py
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

@@ -1,0 +1,8 @@
+custom_name: 8.1 Detecting and preventing double bookings
+content:
+  - t01-overlap-logic
+  - t02-overlap-quiz
+  - t03-has-collision
+  - t04-exclude-own-booking
+  - t05-wire-it-in
+  - t06-ai-assisted

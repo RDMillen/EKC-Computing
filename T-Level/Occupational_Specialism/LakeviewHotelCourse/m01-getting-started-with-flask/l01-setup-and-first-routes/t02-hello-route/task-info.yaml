@@ -1,0 +1,17 @@
+type: edu
+custom_name: 1.1.2 Your first route
+files:
+  - name: views.py
+    visible: true
+    placeholders:
+      - offset: 102
+        length: 34
+        placeholder_text: "pass  # TODO: return the welcome text"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

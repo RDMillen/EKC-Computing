@@ -1,0 +1,18 @@
+type: edu
+custom_name: 9.1.4 Write your own unit tests
+files:
+  - name: test_pricing.py
+    visible: true
+    placeholders:
+      - offset: 268
+        length: 368
+        placeholder_text: |2
+              # TODO: add at least three more test methods (see the task description)
+  - name: bookings.py
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

@@ -1,0 +1,5 @@
+type: theory
+custom_name: 2.2.1 How flash messages work
+files:
+  - name: notes.md
+    visible: true

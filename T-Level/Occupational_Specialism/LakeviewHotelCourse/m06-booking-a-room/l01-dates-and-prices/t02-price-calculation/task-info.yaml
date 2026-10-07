@@ -1,0 +1,16 @@
+type: edu
+custom_name: 6.1.2 Calculating the price
+files:
+  - name: bookings.py
+    visible: true
+    placeholders:
+      - offset: 814
+        length: 319
+        placeholder_text: |-
+          pass  # TODO: raise ValueError for nights < 1 or occupants < 1.
+              #       Otherwise: (price_per_night + extra_guests * EXTRA_GUEST_PER_NIGHT) * nights, rounded to 2 decimal places.
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

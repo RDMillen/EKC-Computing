@@ -1,0 +1,19 @@
+type: edu
+custom_name: 6.1.1 Working with dates
+files:
+  - name: bookings.py
+    visible: true
+    placeholders:
+      - offset: 395
+        length: 74
+        placeholder_text: "pass  # TODO: parse check_in with date.fromisoformat, add timedelta(days=nights),\
+      \ return .isoformat()"
+      - offset: 577
+        length: 74
+        placeholder_text: "pass  # TODO: subtract the two dates and return the number\
+      \ of days as an int"
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

@@ -1,0 +1,5 @@
+type: theory
+custom_name: "3.1.1 Tables, keys and data types"
+files:
+  - name: notes.md
+    visible: true

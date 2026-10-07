@@ -1,0 +1,17 @@
+type: edu
+custom_name: 3.3.1 Connect with sqlite3
+files:
+  - name: database.py
+    visible: true
+    placeholders:
+      - offset: 58
+        length: 124
+        placeholder_text: "pass  # TODO: connect, set row_factory to sqlite3.Row, enable\
+      \ foreign keys, return the connection"
+  - name: tests/test.py
+    visible: false
+  - name: tests/helpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

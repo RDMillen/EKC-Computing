@@ -1,0 +1,15 @@
+type: edu
+custom_name: 3.2.1 CREATE TABLE
+files:
+  - name: queries.py
+    visible: true
+    placeholders:
+      - offset: 13
+        length: 799
+        placeholder_text: |
+          -- TODO: write the three CREATE TABLE statements (users, rooms, bookings)
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

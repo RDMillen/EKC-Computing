@@ -1,0 +1,5 @@
+type: theory
+custom_name: 1.2.3 Version control with local Git
+files:
+  - name: GIT_NOTES.md
+    visible: true

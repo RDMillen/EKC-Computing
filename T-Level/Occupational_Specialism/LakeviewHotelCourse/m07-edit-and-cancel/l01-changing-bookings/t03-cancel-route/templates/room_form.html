@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Add a room{% endblock %}
+{% block content %}
+<h1>Add a room</h1>
+<form method="post">
+  <label for="number">Room number</label>
+  <input id="number" name="number" type="text" value="{{ form.get('number', '') }}" required>
+  <label for="room_type">Room type</label>
+  <input id="room_type" name="room_type" type="text" value="{{ form.get('room_type', '') }}" required>
+  <label for="capacity">Capacity</label>
+  <input id="capacity" name="capacity" type="text" value="{{ form.get('capacity', '') }}" required>
+  <label for="price_per_night">Price per night (£)</label>
+  <input id="price_per_night" name="price_per_night" type="text" value="{{ form.get('price_per_night', '') }}" required>
+  <button type="submit">Add room</button>
+</form>
+{% endblock %}

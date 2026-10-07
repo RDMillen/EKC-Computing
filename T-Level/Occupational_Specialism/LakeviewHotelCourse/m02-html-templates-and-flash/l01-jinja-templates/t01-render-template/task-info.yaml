@@ -1,0 +1,20 @@
+type: edu
+custom_name: 2.1.1 Render a template
+files:
+  - name: views.py
+    visible: true
+    placeholders:
+      - offset: 360
+        length: 78
+        placeholder_text: "pass  # TODO: render rooms.html, passing hotel_name and rooms"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: templates/rooms.html
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

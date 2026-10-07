@@ -1,0 +1,6 @@
+custom_name: 1.2 Project structure and Git
+content:
+  - t01-project-structure
+  - t02-where-templates
+  - t03-local-git
+  - t04-gitignore

@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "`conn.execute(\"SELECT * FROM users WHERE email = ?\", (email,))`"
+    is_correct: true
+  - text: "`conn.execute(f\"SELECT * FROM users WHERE email = '{email}'\")`"
+    is_correct: false
+  - text: '`conn.execute("SELECT * FROM users WHERE email = ''" + email + "''")`'
+    is_correct: false
+  - text: '`conn.execute("SELECT * FROM users WHERE email = ''%s''" % email)`'
+    is_correct: false
+message_correct: Correct!
+message_incorrect: Three of these paste the email into the SQL text. Look for the
+  one that passes the value separately.
+files:
+  - name: notes.md
+    visible: true
+custom_name: 3.3.4 Which query is safe?
+local_check: true

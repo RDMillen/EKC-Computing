@@ -1,0 +1,6 @@
+custom_name: 4.1 Database-driven pages
+content:
+  - t01-database-connection
+  - t02-list-rooms
+  - t03-add-room-form
+  - t04-room-detail

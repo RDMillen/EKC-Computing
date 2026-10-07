@@ -1,0 +1,5 @@
+type: theory
+custom_name: "10.1.3 Challenge: seasonal pricing"
+files:
+  - name: notes.md
+    visible: true

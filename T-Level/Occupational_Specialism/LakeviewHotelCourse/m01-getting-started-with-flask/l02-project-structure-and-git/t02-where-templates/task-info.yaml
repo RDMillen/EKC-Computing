@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: In a `templates` folder next to `app.py`
+    is_correct: true
+  - text: In a `static` folder next to `app.py`
+    is_correct: false
+  - text: "In the same folder as `app.py`, with no subfolder"
+    is_correct: false
+  - text: In the folder where you ran the program from
+    is_correct: false
+message_correct: Correct!
+message_incorrect: Not quite. Re-read the task and try again.
+files:
+  - name: notes.md
+    visible: true
+custom_name: 1.2.2 Where do templates live?
+local_check: true

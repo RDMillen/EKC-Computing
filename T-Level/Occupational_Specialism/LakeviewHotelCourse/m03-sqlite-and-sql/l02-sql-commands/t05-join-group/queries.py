@@ -1,0 +1,43 @@
+SCHEMA = """
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    password_hash TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS rooms (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    number INTEGER NOT NULL UNIQUE,
+    room_type TEXT NOT NULL,
+    capacity INTEGER NOT NULL CHECK (capacity > 0),
+    price_per_night REAL NOT NULL CHECK (price_per_night > 0),
+    available INTEGER NOT NULL DEFAULT 1
+);
+
+CREATE TABLE IF NOT EXISTS bookings (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL REFERENCES users (id),
+    room_id INTEGER NOT NULL REFERENCES rooms (id),
+    check_in TEXT NOT NULL,
+    check_out TEXT NOT NULL,
+    occupants INTEGER NOT NULL CHECK (occupants > 0),
+    total_price REAL NOT NULL
+);
+"""
+
+BOOKING_DETAILS = """
+SELECT b.id, u.name, r.number, b.check_in, b.check_out, b.total_price
+FROM bookings b
+JOIN users u ON u.id = b.user_id
+JOIN rooms r ON r.id = b.room_id
+ORDER BY b.check_in
+"""
+
+ROOM_BOOKING_COUNTS = """
+SELECT r.number, COUNT(b.id)
+FROM rooms r
+LEFT JOIN bookings b ON b.room_id = r.id
+GROUP BY r.id
+ORDER BY r.number
+"""

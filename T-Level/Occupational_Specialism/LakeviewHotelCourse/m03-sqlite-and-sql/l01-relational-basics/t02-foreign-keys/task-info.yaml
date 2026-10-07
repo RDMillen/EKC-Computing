@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: '`user_id`'
+    is_correct: true
+  - text: '`room_id`'
+    is_correct: true
+  - text: '`id`'
+    is_correct: false
+  - text: '`total_price`'
+    is_correct: false
+message_correct: Correct!
+message_incorrect: A foreign key holds the primary key of a row in a different table.
+files:
+  - name: notes.md
+    visible: true
+custom_name: 3.1.2 Spot the foreign keys
+local_check: true

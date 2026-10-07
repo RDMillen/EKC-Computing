@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Rooms</title></head>
+<body>
+<h1>Rooms</h1>
+<ul>
+{% for room in rooms %}
+  <li>Room {{ room.number }}: {{ room.type }} (£{{ "%.2f"|format(room.price) }})
+    {% if room.available %}<span class="badge available">Available</span>{% else %}<span class="badge unavailable">Unavailable</span>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+</body>
+</html>

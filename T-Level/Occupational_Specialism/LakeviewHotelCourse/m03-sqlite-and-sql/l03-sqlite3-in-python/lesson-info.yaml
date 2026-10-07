@@ -1,0 +1,6 @@
+custom_name: 3.3 Using sqlite3 from Python
+content:
+  - t01-connection
+  - t02-sql-injection
+  - t03-parameterised
+  - t04-safe-query

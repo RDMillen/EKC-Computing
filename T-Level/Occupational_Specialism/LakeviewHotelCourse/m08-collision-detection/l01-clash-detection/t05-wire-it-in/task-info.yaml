@@ -1,0 +1,77 @@
+type: edu
+custom_name: 8.1.5 Refuse clashing bookings
+files:
+  - name: bookings.py
+    visible: true
+    placeholders:
+      - offset: 2682
+        length: 115
+        placeholder_text: "# TODO: if the dates clash, raise BookingConflict(\"Those dates\
+      \ are already booked\")"
+      - offset: 3870
+        length: 157
+        placeholder_text: "# TODO: if the new dates clash with ANOTHER booking, raise\
+      \ BookingConflict(\"Those dates are already booked\")"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: db.py
+    visible: true
+    editable: false
+  - name: schema.sql
+    visible: true
+    editable: false
+  - name: templates/base.html
+    visible: true
+    editable: false
+  - name: templates/home.html
+    visible: true
+    editable: false
+  - name: templates/rooms.html
+    visible: true
+    editable: false
+  - name: templates/room_form.html
+    visible: true
+    editable: false
+  - name: templates/room_detail.html
+    visible: true
+    editable: false
+  - name: templates/register.html
+    visible: true
+    editable: false
+  - name: templates/login.html
+    visible: true
+    editable: false
+  - name: templates/account.html
+    visible: true
+    editable: false
+  - name: templates/profile.html
+    visible: true
+    editable: false
+  - name: templates/book.html
+    visible: true
+    editable: false
+  - name: templates/booking_confirmation.html
+    visible: true
+    editable: false
+  - name: templates/my_bookings.html
+    visible: true
+    editable: false
+  - name: templates/edit_booking.html
+    visible: true
+    editable: false
+  - name: static/style.css
+    visible: true
+    editable: false
+  - name: views.py
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/helpers.py
+    visible: false
+  - name: tests/dbhelpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

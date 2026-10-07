@@ -1,0 +1,5 @@
+type: theory
+custom_name: "10.1.5 Challenge: blueprints and an app factory"
+files:
+  - name: notes.md
+    visible: true

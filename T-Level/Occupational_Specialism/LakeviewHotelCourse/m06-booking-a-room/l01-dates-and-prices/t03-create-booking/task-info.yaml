@@ -1,0 +1,18 @@
+type: edu
+custom_name: 6.1.3 Saving a booking
+files:
+  - name: bookings.py
+    visible: true
+    placeholders:
+      - offset: 1297
+        length: 746
+        placeholder_text: |-
+          pass  # TODO: load the room (ValueError if missing, unavailable, or over capacity), work out check_out,
+              #       price it with calculate_price, INSERT the booking (? parameters), commit and return cursor.lastrowid
+  - name: tests/test.py
+    visible: false
+  - name: tests/dbhelpers.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

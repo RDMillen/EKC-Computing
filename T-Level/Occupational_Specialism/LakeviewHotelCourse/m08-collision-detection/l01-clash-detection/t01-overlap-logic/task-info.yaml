@@ -1,0 +1,5 @@
+type: theory
+custom_name: 8.1.1 When do two stays overlap?
+files:
+  - name: notes.md
+    visible: true

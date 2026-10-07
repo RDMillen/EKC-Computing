@@ -1,0 +1,18 @@
+type: edu
+custom_name: "2.2.3 Flash, then redirect"
+files:
+  - name: views.py
+    visible: true
+    placeholders:
+      - offset: 215
+        length: 75
+        placeholder_text: "pass  # TODO: flash \"Flash works!\" with category \"success\"\
+      , then redirect to the home page"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

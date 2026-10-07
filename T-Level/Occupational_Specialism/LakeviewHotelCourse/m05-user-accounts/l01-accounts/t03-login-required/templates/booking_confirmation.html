@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Booking {{ booking["id"] }}{% endblock %}
+{% block content %}
+<h1>Booking #{{ booking["id"] }}</h1>
+<dl>
+  <dt>Room</dt><dd>{{ booking["room_number"] }} ({{ booking["room_type"] }})</dd>
+  <dt>Check-in</dt><dd>{{ booking["check_in"] }}</dd>
+  <dt>Check-out</dt><dd>{{ booking["check_out"] }}</dd>
+  <dt>Guests</dt><dd>{{ booking["occupants"] }}</dd>
+  <dt>Total price</dt><dd>£{{ "%.2f"|format(booking["total_price"]) }}</dd>
+</dl>
+<p><a href="/my-bookings">Back to my bookings</a></p>
+{% endblock %}

@@ -1,0 +1,24 @@
+type: edu
+custom_name: 2.2.4 Display flashed messages
+files:
+  - name: templates/base.html
+    visible: true
+    placeholders:
+      - offset: 125
+        length: 224
+        placeholder_text: "<!-- TODO: loop over get_flashed_messages(with_categories=true)\
+      \ and print each message with a class alert-<category> -->"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: views.py
+    visible: true
+    editable: false
+  - name: templates/home.html
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

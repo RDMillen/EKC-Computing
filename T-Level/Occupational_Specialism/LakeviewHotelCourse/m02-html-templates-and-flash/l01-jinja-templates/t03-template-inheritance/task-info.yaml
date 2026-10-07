@@ -1,0 +1,34 @@
+type: edu
+custom_name: 2.1.3 Template inheritance
+files:
+  - name: templates/base.html
+    visible: true
+    placeholders:
+      - offset: 234
+        length: 99
+        placeholder_text: "<!-- TODO: add links to the home and rooms pages using url_for\
+      \ (the endpoints are views.home and views.rooms) -->"
+      - offset: 356
+        length: 33
+        placeholder_text: "<!-- TODO: define a block called content for child pages to\
+      \ fill -->"
+  - name: app.py
+    visible: true
+    editable: false
+  - name: views.py
+    visible: true
+    editable: false
+  - name: templates/rooms.html
+    visible: true
+    editable: false
+  - name: templates/home.html
+    visible: true
+    editable: false
+  - name: static/style.css
+    visible: true
+    editable: false
+  - name: tests/test.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+    propagatable: false

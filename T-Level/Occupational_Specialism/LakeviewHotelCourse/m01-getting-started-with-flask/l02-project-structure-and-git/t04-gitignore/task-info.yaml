@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: '`venv/`'
+    is_correct: true
+  - text: '`__pycache__/`'
+    is_correct: true
+  - text: '`hotel.db`'
+    is_correct: true
+  - text: '`views.py`'
+    is_correct: false
+message_correct: Correct!
+message_incorrect: "Think about files that are generated, personal to your machine,\
+  \ or private data, not your source code."
+files:
+  - name: notes.md
+    visible: true
+custom_name: 1.2.4 What goes in .gitignore?
+local_check: true
